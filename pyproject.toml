@@ -34,7 +34,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "torch>=2.4",
+    "torch>=2.14.1",
     "torchaudio>=2.4",
     "torchvision>=0.19",
     "transformers>=5.10.0",
@@ -52,7 +52,7 @@ dependencies = [
     # ("No ASR backend is ready"). Cap below 80 so pkg_resources stays present
     # (issue #224; also #58). Revisit when whisperx/faster-whisper drop the
     # pkg_resources dependency.
-    "setuptools>=75,<80",
+    "setuptools>=84.0.0,<85",
     "psutil>=7.2.2",
     # Pinned to 3.x — pyannote 4.x removed `use_auth_token` from `Inference`
     # which whisperx 3.4.2 still passes, blowing up `whisperx.load_model()`
@@ -148,7 +148,7 @@ dependencies = [
     # deps → identical behaviour on macOS/Windows/Linux (default-parity rule).
     # EPUB + plaintext stay stdlib-only; only PDF needs a real parser, and
     # pypdf is the lightest one that ships no C extensions.
-    "pypdf>=4.0",
+    "pypdf>=6.20.1",
     # LLM client for Cinematic dub refinement, glossary auto-extract, and
     # LLM-based translation (services.llm_backend / translator / dub_translate
     # all `from openai import OpenAI`). Talks to any OpenAI-compatible endpoint —

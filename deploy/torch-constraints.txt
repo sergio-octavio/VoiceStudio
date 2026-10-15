@@ -31,6 +31,6 @@
 # of quietly picking a newer, mismatched trio. Loud beats broken -- but it does
 # mean these pins have to be bumped when the supported Python floor moves.
 # Colab is 3.12 and both Docker bases are pinned, so nothing ships on 3.14 yet.
-torch==2.8.0
+torch==2.14.1
 torchaudio==2.8.0
 torchvision==0.23.0
